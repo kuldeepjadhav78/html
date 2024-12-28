@@ -1,0 +1,100 @@
+<!--Student registetion form-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  doby{
+  background:black;
+  }
+  #main{
+  background:rgb(235,218,232);
+  color:Black;
+  width:350px;
+  margin:auto;
+  border-redius:15px;
+  padding :25px;
+
+  }
+  #main:hover{
+  box-shadow: 0 0 80px blue;
+  }
+  
+  </style>
+  
+ </head>
+ <body>
+ 
+ <div id ="main">
+ <h3 align="center"> Registration Form</h3>
+  <form id="frml" action="registration.html" autocomplete="off">
+  <div>
+ <label for ="fna"> Enter Full Name :</label><span>*</span><br>
+ <input type="text"id="fna" name="fna" required>
+ </div>
+ <br>
+ <div>
+ <label for ="fna"> Enter Email Id:</label><span>*</span><br>
+ <input type="email"em="fna" name="em" required> 
+ </div>
+ <br>
+  <div>
+ <label for ="ph"> Enter Contact Number:</label><span>*</span><br>
+ <input type="number" id ="ph" name="ph" min="6000000000" max="9999999999"> 
+ </div>
+ <br>
+ <div>
+ <label for ="dob"> Date of Birth</label><br>
+ <input type="date" id ="dob" name="dob" min="1996-01-01" max="2010-12-31"> 
+ </div>
+ <br>
+ <div>
+ <label>Gender : </label><BR>
+ <input type="radio" id "g1" name="g" value="m" checked>
+ <label for="g1" >Male</label>
+ <input type="radio" id="g2" name="g" value="f">
+ <label for="g2">female</label>
+  <input type="radio" id="g3" name="g" value="o">
+   <label for="g2">Other</label>
+   </div>
+   <br>
+   <div>
+   <label for="coutse">Which Course ?</label><br>
+   <select id"course" name="course">
+   <option value="c"> C Programing</option>
+   <option value="c++"> Cpp Programing</option>
+     <option value="j"> java Programing</option>
+</select>
+</div>
+<br>
+<div>
+<label for="mot">Mode of Training</label>
+<br>
+<select id "mot" name="mot">
+  <option value="pt">Project Training </option>
+     <option value="inter"> interShip</option>
+	 </select>
+	 </div>
+	 <br>
+	 <div>
+	 <label for="addr"> full Adderss</label><br>
+	 <textarea id ="addr" name="addr" row="15" cols="30"></textarea>
+	 </div>
+	 <br>
+	 <div align="center">
+	   <button type="submit" align="center">Submit</button>
+	   </DIV>
+	 
+	 </div>
+	 
+
+ 
+  </form>
+ </body>
+ 
+</html>
